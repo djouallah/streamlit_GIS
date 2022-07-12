@@ -80,5 +80,5 @@ try:
        st.session_state.key2 = map_data['zoom']
 except TypeError:
     point_clicked = None
-st.write(st.session_state.key)
-st.dataframe(result)
+#st.write(st.session_state.key)
+#st.dataframe(result)

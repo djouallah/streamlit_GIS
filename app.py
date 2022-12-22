@@ -29,7 +29,7 @@ point_clicked = st.session_state.key
 location_ini  = st.session_state.key1
 zoom_Start    = st.session_state.key2
 
-m = folium.Map(location=location_ini, zoom_start=zoom_Start)
+m = folium.Map(location=location_ini, zoom_start=zoom_Start,double_click_zoom=False)
 ################################################### Download Data from BigQuery#####################################################
 # Retrieve and convert key file content.
 bigquery_key_json = json.loads(st.secrets["bigquery_key"], strict=False)
